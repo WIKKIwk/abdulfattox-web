@@ -39,6 +39,7 @@
 
 .page-services-list .service-item:last-child {
   border-bottom: none;
+  padding-bottom: 4rem;
 }
 
 .page-services-list .service-item::before,
@@ -68,7 +69,7 @@
 }
 
 .page-footer {
-  padding-top: 0;
+  padding-top: 2rem;
 }
 
 .contact-page-grid {
