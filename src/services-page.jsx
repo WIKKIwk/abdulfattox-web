@@ -54,6 +54,8 @@ setTimeout(() => {
 
             const index = items.indexOf(entry.target);
             setTimeout(() => {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateX(0)';
                 entry.target.classList.add('is-line-visible');
             }, Math.max(index, 0) * 120);
 
