@@ -48,22 +48,51 @@ setTimeout(() => {
     const previewItem = document.getElementById('web-design-item');
     if (!previewItem) return;
 
-    const togglePreview = () => {
-        const next = !previewItem.classList.contains('is-open');
+    let hoverTimer = null;
+
+    const setPreviewState = (next) => {
         previewItem.classList.toggle('is-open', next);
         previewItem.setAttribute('aria-expanded', next ? 'true' : 'false');
     };
 
+    const togglePreview = () => {
+        const next = !previewItem.classList.contains('is-open');
+        setPreviewState(next);
+    };
+
+    const clearHoverTimer = () => {
+        if (!hoverTimer) return;
+        window.clearTimeout(hoverTimer);
+        hoverTimer = null;
+    };
+
+    const queueAutoOpen = () => {
+        clearHoverTimer();
+        if (previewItem.classList.contains('is-open')) return;
+
+        hoverTimer = window.setTimeout(() => {
+            setPreviewState(true);
+            hoverTimer = null;
+        }, 5000);
+    };
+
     previewItem.addEventListener('click', (event) => {
         if (event.target.closest('.service-preview-card')) return;
+        clearHoverTimer();
         togglePreview();
     });
 
     previewItem.addEventListener('keydown', (event) => {
         if (event.key !== 'Enter' && event.key !== ' ') return;
         event.preventDefault();
+        clearHoverTimer();
         togglePreview();
     });
+
+    previewItem.addEventListener('pointerenter', queueAutoOpen);
+    previewItem.addEventListener('pointerleave', clearHoverTimer);
+    previewItem.addEventListener('focusin', queueAutoOpen);
+    previewItem.addEventListener('focusout', clearHoverTimer);
 }, 80);
 
 setTimeout(() => {
