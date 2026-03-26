@@ -1,115 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uz">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Services</title>
+        <link
+            href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/src/style.css" />
+        <link rel="stylesheet" href="/src/pages.css" />
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services</title>
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/style.css" />
-  <link rel="stylesheet" href="/src/pages.css" />
-</head>
+    <body class="page-body">
+        <div id="lang-switcher-root"></div>
+        <div id="staggered-menu-root"></div>
 
-<body class="page-body">
-  <div id="lang-switcher-root"></div>
-  <div id="staggered-menu-root"></div>
+        <main class="page-shell">
+            <section class="page-hero">
+                <div id="services-title-root"></div>
+                <div id="services-lead-root"></div>
+            </section>
 
-  <main class="page-shell">
-    <section class="page-hero">
-      <div id="services-title-root"></div>
-      <div id="services-lead-root"></div>
-    </section>
+            <section class="page-section">
+                <div class="services-list page-services-list">
+                    <div
+                        class="service-item service-item-preview"
+                        id="web-design-item"
+                        tabindex="0"
+                        role="button"
+                        aria-expanded="false"
+                    >
+                        <div class="service-row">
+                            <span class="service-num">01</span>
+                            <h3 data-i18n="service_web_title">
+                                Professional Web Design
+                            </h3>
+                        </div>
+                        <p data-i18n="service_web_body">
+                            Modern web interfaces built to feel premium,
+                            trustworthy, and aligned with the brand. Designed
+                            with strong typography, clear visual hierarchy, and
+                            UX decisions that support real conversion.
+                        </p>
+                        <div class="service-preview-block">
+                            <div class="service-preview-header">
+                                <span
+                                    class="service-preview-title"
+                                    data-i18n="service_web_preview_title"
+                                    >Selected web work</span
+                                >
+                            </div>
+                            <div class="service-preview-grid">
+                                <a
+                                    class="service-preview-card"
+                                    href="https://qadoqdizayn.uz/"
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                                    aria-label="Islom Aka live site"
+                                >
+                                    <img
+                                        src="/work-previews/islom_aka.png"
+                                        alt="Islom Aka website preview"
+                                        loading="lazy"
+                                    />
+                                    <span class="service-preview-meta">
+                                        <span class="service-preview-name"
+                                            >Islom Aka</span
+                                        >
+                                        <span
+                                            class="service-preview-link"
+                                            data-i18n="service_web_preview_cta"
+                                            >Open live site</span
+                                        >
+                                    </span>
+                                </a>
+                                <a
+                                    class="service-preview-card"
+                                    href="https://wikkiwk.github.io/client-portfolio-web-01/"
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                                    aria-label="Stupenki Kids live site"
+                                >
+                                    <img
+                                        src="/work-previews/image.png"
+                                        alt="Stupenki Kids website preview"
+                                        loading="lazy"
+                                    />
+                                    <span class="service-preview-meta">
+                                        <span class="service-preview-name"
+                                            >Stupenki Kids</span
+                                        >
+                                        <span
+                                            class="service-preview-link"
+                                            data-i18n="service_web_preview_cta"
+                                            >Open live site</span
+                                        >
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-    <section class="page-section">
-      <div class="services-list page-services-list">
-        <div class="service-item service-item-preview" id="web-design-item" tabindex="0" role="button"
-          aria-expanded="false">
-          <div class="service-row">
-            <span class="service-num">01</span>
-            <h3 data-i18n="service_web_title">Professional Web Design</h3>
-          </div>
-          <p data-i18n="service_web_body">Modern web interfaces built to feel premium, trustworthy, and aligned with the
-            brand. Designed with strong typography, clear visual hierarchy, and UX decisions that support real
-            conversion.</p>
-          <div class="service-preview-block">
-            <div class="service-preview-header">
-              <span class="service-preview-title" data-i18n="service_web_preview_title">Selected web work</span>
+                    <div class="service-item">
+                        <div class="service-row">
+                            <span class="service-num">02</span>
+                            <h3 data-i18n="service_1_title">
+                                Enterprise ERP Solutions
+                            </h3>
+                        </div>
+                        <p data-i18n="service_1_body">
+                            End-to-end ERPNext implementations — from custom
+                            manufacturing workflows and warehouse automation to
+                            multi-branch inventory control and third-party API
+                            integrations. Systems built to handle real
+                            operational complexity at scale.
+                        </p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-row">
+                            <span class="service-num">03</span>
+                            <h3 data-i18n="service_2_title">
+                                High-Performance TUI Applications
+                            </h3>
+                            <span class="service-tag" data-i18n="rare_skill"
+                                >Rare Skill</span
+                            >
+                        </div>
+                        <p data-i18n="service_2_body">
+                            Full-featured terminal user interfaces for Linux
+                            environments — designed for maximum speed,
+                            zero-dependency operation, and direct hardware
+                            communication. When GUIs are too slow, TUIs deliver.
+                        </p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-row">
+                            <span class="service-num">04</span>
+                            <h3 data-i18n="service_3_title">
+                                Telegram Automation Systems
+                            </h3>
+                        </div>
+                        <p data-i18n="service_3_body">
+                            Production-grade Telegram bots that power business
+                            workflows — automated notifications, sales pipeline
+                            tracking, inventory alerts, remote device
+                            management, and real-time reporting dashboards.
+                        </p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-row">
+                            <span class="service-num">05</span>
+                            <h3 data-i18n="service_4_title">
+                                Hardware &amp; System Integrations
+                            </h3>
+                        </div>
+                        <p data-i18n="service_4_body">
+                            Bridging the gap between software and hardware —
+                            RFID readers, thermal printers, barcode scanners,
+                            and custom APIs wired into robust backend systems
+                            that work reliably in production environments.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer page-footer">
+            <div class="divider-crosses">
+                <span>+</span><span>+</span><span>+</span><span>+</span
+                ><span>+</span><span>+</span>
             </div>
-            <div class="service-preview-grid">
-              <a class="service-preview-card" href="https://qadoqdizayn.uz/" target="_blank" rel="noreferrer noopener"
-                aria-label="Islom Aka live site">
-                <img src="/work-previews/islom_aka.png" alt="Islom Aka website preview" loading="lazy" />
-                <span class="service-preview-meta">
-                  <span class="service-preview-name">Islom Aka</span>
-                  <span class="service-preview-link" data-i18n="service_web_preview_cta">Open live site</span>
-                </span>
-              </a>
-              <a class="service-preview-card" href="https://wikkiwk.github.io/web_portfolio_1/" target="_blank"
-                rel="noreferrer noopener" aria-label="Stupenki Kids live site">
-                <img src="/work-previews/image.png" alt="Stupenki Kids website preview" loading="lazy" />
-                <span class="service-preview-meta">
-                  <span class="service-preview-name">Stupenki Kids</span>
-                  <span class="service-preview-link" data-i18n="service_web_preview_cta">Open live site</span>
-                </span>
-              </a>
+            <div class="footer-content">
+                <a
+                    href="./contact.html"
+                    class="btn-secondary"
+                    data-i18n="footer_cta"
+                    >Send a Message →</a
+                >
             </div>
-          </div>
-        </div>
+        </footer>
 
-        <div class="service-item">
-          <div class="service-row">
-            <span class="service-num">02</span>
-            <h3 data-i18n="service_1_title">Enterprise ERP Solutions</h3>
-          </div>
-          <p data-i18n="service_1_body">End-to-end ERPNext implementations — from custom manufacturing workflows and
-            warehouse automation to multi-branch inventory control and third-party API integrations. Systems built to
-            handle real operational complexity at scale.</p>
-        </div>
-
-        <div class="service-item">
-          <div class="service-row">
-            <span class="service-num">03</span>
-            <h3 data-i18n="service_2_title">High-Performance TUI Applications</h3>
-            <span class="service-tag" data-i18n="rare_skill">Rare Skill</span>
-          </div>
-          <p data-i18n="service_2_body">Full-featured terminal user interfaces for Linux environments — designed for
-            maximum speed, zero-dependency operation, and direct hardware communication. When GUIs are too slow, TUIs
-            deliver.</p>
-        </div>
-
-        <div class="service-item">
-          <div class="service-row">
-            <span class="service-num">04</span>
-            <h3 data-i18n="service_3_title">Telegram Automation Systems</h3>
-          </div>
-          <p data-i18n="service_3_body">Production-grade Telegram bots that power business workflows — automated
-            notifications, sales pipeline tracking, inventory alerts, remote device management, and real-time reporting
-            dashboards.</p>
-        </div>
-
-        <div class="service-item">
-          <div class="service-row">
-            <span class="service-num">05</span>
-            <h3 data-i18n="service_4_title">Hardware &amp; System Integrations</h3>
-          </div>
-          <p data-i18n="service_4_body">Bridging the gap between software and hardware — RFID readers, thermal printers,
-            barcode scanners, and custom APIs wired into robust backend systems that work reliably in production
-            environments.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer page-footer">
-    <div class="divider-crosses">
-      <span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span>
-    </div>
-    <div class="footer-content">
-      <a href="./contact.html" class="btn-secondary" data-i18n="footer_cta">Send a Message →</a>
-    </div>
-  </footer>
-
-  <script type="module" src="/src/services-page.jsx"></script>
-</body>
-
+        <script type="module" src="/src/services-page.jsx"></script>
+    </body>
 </html>
